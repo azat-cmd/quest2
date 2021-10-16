@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">     
     <link rel="stylesheet" href="../css/style2.css">
     <title>Document</title>
+    <script src="../scripts/script.js"></script>
 </head>
 <body>
     <header>
@@ -16,7 +17,7 @@
         </div>
 
         <div class = "d2 borderElement">
-            <form>
+            <form name="formname">
                 <div>
                     <div>Как Вам удобно получить ответ:</div>
                     <label for="c_mail">
@@ -67,7 +68,7 @@
                     <textarea cols="20"></textarea>
                 </div> 
                       
-               <p><input type="submit" value="отправить вопрос"></p>
+               <p><input type="submit" name="inputname" value="отправить вопрос" onclick="handleForm()"></p>
             </form>
         </div>
 
