@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+    </style>
+    <script>
+        console.log("dddfsdf");
+        document.write("Hi");
+        function myprint(){
+            alert("dfhd");
+        }
+        function add_red(){
+            document.getElementById("test").classList.add("red")
+        }
+        function remove_red(){            
+            document.getElementById("test").classList.remove("red")
+        }
+        function toggle_red(){            
+            document.getElementById("test").classList.toggle("red")
+        }
+        function myselect(){
+            txt = document.getElementById("myText")
+            selected = event.target.value.substring(event.target.selectionStart,event.target.selectionEnd);
+            txt.value = selected;
+        }
+    </script>
+</head>
+<body>
+    <p id="test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis repellat laborum quibusdam minima asperiores, similique illum tempore quae repellendus iste vero temporibus dolorem facilis? Hic earum ducimus labore dolores eos.</p>
+    <button onclick="add_red()">
+        <p>add</p>
+    </button>
+    <button onclick="remove_red()">
+        <p>remove</p>
+    </button>
+    <button onclick="toggle_red()">
+        <p>toggle</p>
+    </button>
+
+    <textarea id="myText">
+    </textarea>
+    <textarea onselect="myselect()">
+    </textarea>
+</body>
+</html>
